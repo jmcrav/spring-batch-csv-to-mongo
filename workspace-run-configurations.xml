@@ -1,0 +1,68 @@
+<component name="RunManager" selected="Gradle.csv-to-mongo [bootRun]">
+    <configuration name="runmongo" type="BashConfigurationType" factoryName="Bash">
+        <option name="INTERPRETER_OPTIONS" value=""/>
+        <option name="INTERPRETER_PATH" value="/bin/bash"/>
+        <option name="PROJECT_INTERPRETER" value="false"/>
+        <option name="WORKING_DIRECTORY" value=""/>
+        <option name="PARENT_ENVS" value="true"/>
+        <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runmongoserver.sh"/>
+        <option name="PARAMETERS" value=""/>
+        <module name=""/>
+        <method v="2"/>
+    </configuration>
+    <configuration name="stopmongo" type="BashConfigurationType" factoryName="Bash">
+        <option name="INTERPRETER_OPTIONS" value=""/>
+        <option name="INTERPRETER_PATH" value="/bin/bash"/>
+        <option name="PROJECT_INTERPRETER" value="false"/>
+        <option name="WORKING_DIRECTORY" value=""/>
+        <option name="PARENT_ENVS" value="true"/>
+        <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stopmongoserver.sh"/>
+        <option name="PARAMETERS" value=""/>
+        <module name=""/>
+        <method v="2"/>
+    </configuration>
+    <configuration name="csv-to-mongo [bootRun]" type="GradleRunConfiguration" factoryName="Gradle">
+        <ExternalSystemSettings>
+            <option name="executionName"/>
+            <option name="externalProjectPath" value="$PROJECT_DIR$"/>
+            <option name="externalSystemIdString" value="GRADLE"/>
+            <option name="scriptParameters" value=""/>
+            <option name="taskDescriptions">
+                <list/>
+            </option>
+            <option name="taskNames">
+                <list>
+                    <option value="bootRun"/>
+                </list>
+            </option>
+            <option name="vmOptions" value=""/>
+        </ExternalSystemSettings>
+        <extension name="com.egoshard.intellij.k8s-runtime-config-plugin">
+            <option name="ENABLED" value="false"/>
+            <entries/>
+        </extension>
+        <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+        <method v="2">
+            <option name="RunConfigurationTask" enabled="true" run_configuration_name="runmongo"
+                    run_configuration_type="BashConfigurationType"/>
+        </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+        <module name="spring-batch-csv-to-mongo.main"/>
+        <extension name="com.egoshard.intellij.k8s-runtime-config-plugin">
+            <option name="ENABLED" value="false"/>
+            <entries/>
+        </extension>
+        <option name="SPRING_BOOT_MAIN_CLASS" value="com.walking.techie.Application"/>
+        <option name="ALTERNATIVE_JRE_PATH"/>
+        <method v="2">
+            <option name="Make" enabled="true"/>
+        </method>
+    </configuration>
+    <list>
+        <item itemvalue="Bash.runmongo"/>
+        <item itemvalue="Bash.stopmongo"/>
+        <item itemvalue="Gradle.csv-to-mongo [bootRun]"/>
+        <item itemvalue="Spring Boot.Application"/>
+    </list>
+</component>
